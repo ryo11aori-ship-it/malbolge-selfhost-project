@@ -1,1 +1,1 @@
-{"name":"M","on":"push","jobs":{"x":{"runs-on":"ubuntu-latest","steps":[{"uses":"actions/checkout@v4"},{"run":"curl -fsSL https://www.lscheffer.com/malbolge.c -o malbolge.c"},{"run":"gcc malbolge.c -o m"},{"run":"touch main.mal && ./m main.mal"}]}}}
+{"name":"M","on":"push","jobs":{"x":{"runs-on":"ubuntu-latest","steps":[{"uses":"actions/checkout@v4"},{"run":"curl -fsSLk https://www.lscheffer.com/malbolge.c -o malbolge.c"},{"run":"gcc malbolge.c -o m"},{"run":"touch main.mal && ./m main.mal"}]}}}
